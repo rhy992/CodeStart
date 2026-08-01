@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeStart Indonesia</title>
+    <!--link to google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!--link to font awesome-->
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--link to css file-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">CodeStart</div>
+        <nav class="nav-links">
+            <a href="#about" class="nav-links-item">About</a>
+            <a href="#class" class="nav-links-item">Class</a>
+            <a href="#materials" class="nav-links-item">Learning Materials</a>
+            <a href="#home" class="nav-links-item">Home</a>
+        </nav>
+    </header>
+
+    <!--Hero Section-->
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>Welcome to CodeStart Indonesia | Free Coding Classes</h1>
+        <p>Kelas coding gratis untuk seluruh pelajar Indonesia</p>
+        <a href="#class" class="btn">Get Started</a>
+    </div>
+    <div class="hero-image">
+        <img src="CodeStartPoster.jpg" height="500px" alt="CodeStart Poster">
+    </div>
+</section>
+
+<!--About Section-->
+<section class="about" id="about">
+    <h2>About CodeStart</h2>
+    <div class="about-filters">
+        <button class="about-btn" data-filter="vision">Vision</button>
+        <button class="about-btn" data-filter="mission">Mission</button>
+        <button class="about-btn" data-filter="history">History</button>
+    </div>
+    <div class="about-grid">
+        <div class="about-card" data-category="vision">
+            <i class="fa-solid fa-eye"></i>
+            <p>Visi CodeStart adalah menciptakan generasi muda Indonesia yang mampu bersaing di era digital, memiliki keterampilan coding yang kuat, dan mampu berinovasi dalam berbagai bidang teknologi.</p>
+        </div>
+        <div class="about-card" data-category="mission">
+            <i class="fa-solid fa-bullseye"></i>
+            <p>Misi CodeStart adalah menyediakan kelas coding gratis yang berkualitas, membangun komunitas pelajar yang saling mendukung, dan memberikan kesempatan kepada semua pelajar di Indonesia untuk mengembangkan keterampilan digital mereka.</p>
+        </div>
+        <div class="about-card" data-category="history">
+            <i class="fa-solid fa-scroll"></i>
+            <p>CodeStart dimulai sebagai inisiatif kecil seorang pelajar SMA Negeri 5 pekanbaru Indonesia untuk mengembangkan skillsetnya sekaligus membantu pelajar lainnya dalam memahami teknologi informasi.</p>
+        </div>  
+    </div>
+</section>
+
+<!--class section-->
+<section class="class" id="class">
+    <h2>Mentor Profile</h2>
+    <div class="class-grid">
+        <div class="class-card-mentor">
+            <img src="mentor.jpeg" height="80px" alt="Mentor Photo">
+            <h3>Febrina</h3>
+            <p>High School 3rd Year</p>
+            <p>Enthusiast in Computer Science and Design</p>
+            <p>Basics in Information Technology, Mathematics, English, and Design</p>
+        </div>
+    </div>
+    
+    <h2>Free Coding Class</h2>
+    <div class="class-grid">
+        <div class="class-card">
+            <i class="fa-solid fa-arrow-trend-up"></i>
+            <p>What You Will Learn:</p>
+            <p>Introduction to Programming ✅</p>
+            <p>Variables & Data Types ✅</p>
+            <p>Input & Output ✅</p>
+            <p>Conditions & Loops ✅</p>
+            <p>Functions ✅</p>
+            <p>HTML & CSS ✅</p>
+            <p>Phyton Basics ✅</p>
+            <p>Mini Project Development ✅</p>
+            <p>Final Project Presentation ✅</p>
+        </div>
+        <div class="class-card">
+            <i class="fa-solid fa-person"></i>
+            <p>Who Can Join:</p>
+            <p>High School Students ✅</p>
+            <p>University Students ✅</p>
+            <p>Beginners with No Coding Experience ✅</p>
+        </div>
+        <div class="class-card">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <p>What You Will Get</p>
+            <p>🎓 Certificate of Completion </p>
+            <p>📚 Learning Materials (PPT)</p>
+            <p>💻 Source Code Examples</p>
+            <p>📝 Weekly Exercises</p>
+            <p>🤝 Mentoring Sessions</p>
+        </div>
+        <div class="join-link">
+            <a href="https://forms.gle/zvLtC7465fW3og9h6" target="_blank" class="join-btn">
+                Join Now🚀
+            </a>
+        </div>
+    </div>
+</section>
+
+<!--Learning Materials Section-->
+<section class="materials" id="materials">
+    <h2>Learning Materials</h2>
+
+  <!-- Tombol -->
+    <div class="materials-buttons">
+        <button onclick="showList('module')">Module</button>
+        <button onclick="showList('ppt')">PPT</button>
+    </div>
+
+  <!-- List Module -->
+    <ul id="module-list" class="materials-list hidden">
+        <li><a href="module1.pdf" target="_blank">Module 1: Introduction</a></li>
+        <li><a href="module2.pdf" target="_blank">Module 2: Variables</a></li>
+        <li><a href="module3.pdf" target="_blank">Module 3: Loops</a></li>
+    </ul>
+
+  <!-- List PPT -->
+    <ul id="ppt-list" class="materials-list hidden">
+        <li><a href="CSID-ppt1.pdf" target="_blank">PPT 1: Introduction</a></li>
+        <li><a href="ppt2.pptx" target="_blank">PPT 2: Functions</a></li>
+        <li><a href="ppt3.pptx" target="_blank">PPT 3: Final Project</a></li>
+    </ul>
+</section>
+
+<!--Footer-->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-col">
+            <h3>CodeStart Indonesia</h3>
+            <p>Broaden your skillsets with a growing community</p>
+        </div>
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#class">Class</a></li>
+                <li><a href="#materials">Learning Materials</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Contact</h3>
+            <p>62 852-7804-5141</p>
+            <p>febrinafrina@gmail.com</p>
+        </div>
+    </div>
+    <div class="social-links">
+        <a href="https://www.instagram.com/fbr1na?igsh=ZWZsbzlycjFiMXE0" target="_blank">
+            <i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+</footer>
+
+
+
+
+
+
+<!--link to js file-->
+    <script src="script.js"></script>
+</body>
+</html>
+
